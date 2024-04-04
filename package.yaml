@@ -1,10 +1,7 @@
 name: remove-quarantine
 version: 0.1.0.0
 github: "migifun/remove-quarantine"
-license: BSD-3-Clause
 author: "migifun"
-maintainer: "example@example.com"
-copyright: "2024 Author name here"
 
 extra-source-files:
   - README.md

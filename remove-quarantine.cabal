@@ -1,4 +1,4 @@
-cabal-version: 2.2
+cabal-version: 1.12
 
 -- This file has been generated from package.yaml by hpack version 0.36.0.
 --
@@ -10,9 +10,8 @@ description:    Please see the README on GitHub at <https://github.com/migifun/r
 homepage:       https://github.com/migifun/remove-quarantine#readme
 bug-reports:    https://github.com/migifun/remove-quarantine/issues
 author:         migifun
-maintainer:     example@example.com
-copyright:      2024 Author name here
-license:        BSD-3-Clause
+maintainer:     migifun
+license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -26,8 +25,6 @@ source-repository head
 library
   other-modules:
       Paths_remove_quarantine
-  autogen-modules:
-      Paths_remove_quarantine
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
@@ -39,8 +36,6 @@ library
 executable remove-quarantine-exe
   main-is: Main.hs
   other-modules:
-      Paths_remove_quarantine
-  autogen-modules:
       Paths_remove_quarantine
   hs-source-dirs:
       app
@@ -55,8 +50,6 @@ test-suite remove-quarantine-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_remove_quarantine
-  autogen-modules:
       Paths_remove_quarantine
   hs-source-dirs:
       test
