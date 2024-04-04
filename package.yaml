@@ -1,0 +1,53 @@
+name: remove-quarantine
+version: 0.1.0.0
+github: "migifun/remove-quarantine"
+license: BSD-3-Clause
+author: "migifun"
+maintainer: "example@example.com"
+copyright: "2024 Author name here"
+
+extra-source-files:
+  - README.md
+  - CHANGELOG.md
+
+description: Please see the README on GitHub at <https://github.com/migifun/remove-quarantine#readme>
+
+dependencies:
+  - base >= 4.7 && < 5
+  - process
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  remove-quarantine-exe:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - remove-quarantine
+
+tests:
+  remove-quarantine-test:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - remove-quarantine
